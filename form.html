@@ -46,7 +46,7 @@
         </div>
 
         <div>
-          <label for="mobileNo">Mobile Number of the Applicant <span class="required">*</span></label>
+          <label for="mobileNo">Mobile No. of the Applicant <span class="required">*</span></label>
           <input type="tel" id="mobileNo" name="mobileNo" required>
         </div>
 
@@ -55,7 +55,40 @@
           <select id="relationship" name="relationship" required>
             <option value="">Select Relationship</option>
             <option value="Proprietor">Proprietor</option>
+            <option value="Partner">Partner</option>
+            <option value="Director">Director</option>
+            <option value="Karta">Karta</option>
+            <option value="Employee">Employee</option>
+            <option value="Authorised Person">Authorised Person</option>
+          </select>
+        </div>
 
+        <div>
+          <label>Proof of Identity <span class="required">*</span></label>
+            <div>
+              <label><input type="radio" id="aadhar" name="proofOfIdentity" value="Aadhaar" required> Aadhaar</label>
+              <label><input type="radio" id="voterid" name="proofOfIdentity" value="Voter Id" required> Voter Id</label>
+              <label><input type="radio" id="drivingLicense" name="proofOfIdentity" value="Driving License" required> Driving License</label>
+            </div>
+        </div>
+        <div>
+          <label for="idNumber">ID Number <span class="required">*</span></label>
+          <input type="text" id="idNumber" name="idNumber" required>
+        </div>
+
+        <div>
+          <label for="demandDraftNumber">Demand Draft Number <span class="required">*</span></label>
+          <input type="text" id="demandDraftNumber" name="demandDraftNumber" required>
+        </div>
+
+        <div>
+          <label for="demandDraftDate">Demand Draft Date <span class="required">*</span></label>
+          <input type="date" id="demandDraftDate" name="demandDraftDate" required>
+        </div>
+
+        <div>
+          <label for="demandDraftAmount">Demand Draft Amount (in rupees) <span class="required">*</span></label>
+          <input type="text" id="demandDraftAmount" name="demandDraftAmount" required>
         </div>
 
         <button type="submit">Submit</button>
